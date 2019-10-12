@@ -11,23 +11,22 @@ class PlayerAPI extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:5000/api/players')
+    fetch('http://localhost:5000/api/players') // Err_Connection_Refused >:(
       .then(res => res.json())
-      .then(player => this.setState({
-          player: player.data
+      .then(players => this.setState({
+          player: players.data
         }))
-      .catch(err => {
-        console.log('Error retrieving Player Data ', err)
-      })
+      .catch(err => console.log('Error retrieving Player Data ', err)
+      )
     }
     
   render() {
-    console.log(this.state);
+    console.log(this.state); // {player: Array(0)} while Err Conn Refused
     return (
       <div className="PlayerAPI">
-        {this.state.player.map((item, index) => (
+        {this.state.player.map((item, index) => 
           <PlayerData item={item} key={index} />
-      ))}
+      )}
       </div>
     )
   }
