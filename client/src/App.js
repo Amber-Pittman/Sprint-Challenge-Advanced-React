@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PlayerAPI from './Components/apiData';
+import DarkModeNavBar from "./Components/DarkModeNavBar";
+//import axios from "axios";
+//import styled from "styled-components";
+
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <DarkModeNavBar />
+      <PlayerAPI />
     </div>
   );
+  
 }
 
 export default App;
