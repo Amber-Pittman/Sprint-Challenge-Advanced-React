@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PlayerData from "./playerData";
-//import axios from "axios";
+import axios from "axios";
 
 class PlayerAPI extends Component {
   constructor() {
@@ -11,8 +11,8 @@ class PlayerAPI extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:5000/api/players') // Err_Connection_Refused >:(
-      .then(res => res.json())
+    axios.get('http://localhost:5000/api/players') // Err_Connection_Refused >:(
+      //.then(res => res.json())
       .then(players => this.setState({
           player: players.data
         }))
