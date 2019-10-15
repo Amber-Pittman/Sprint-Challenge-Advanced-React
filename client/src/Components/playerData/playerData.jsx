@@ -2,9 +2,12 @@ import React from "react";
 import Styled from "styled-components";
 
 const StyledDiv = Styled("div")`
-    border: 1px solid red;
+    border: 1em solid #019875;
+    border-radius: 0 33px 0;
     margin: 1em 2em;
-    padding: 1em;
+    padding: 1.5em;
+    width: 350px;
+    display: inline-block;
 `;
 
 const StyledH3 = Styled("h3")`
