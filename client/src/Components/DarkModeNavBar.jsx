@@ -6,7 +6,7 @@ const StyledNavBar = Styled("nav")`
   align-items: center;
   border-bottom: 1px solid rgb(221, 221, 221);
   display: flex;
-  height: 7.5em;
+  height: 18vh;
   justify-content: space-between;
   padding: 0 3%;
   width: 94%;
@@ -22,7 +22,7 @@ const StyledDiv = Styled("div")`
   height: 20px;
   position: relative;
   width: 40px;
-  margin-right: 2em;
+  margin-right: 4vw;
   `;
 
 const StyledToggle = Styled("div")`
@@ -46,7 +46,7 @@ const StyledH1 = Styled("h1")`
     display: flex;
     justify-content: center;
     color: #019875;
-    margin: 1em 0.5em;
+    margin: 0 0.5em;
 `;
 
 
