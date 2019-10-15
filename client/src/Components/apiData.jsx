@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PlayerData from "./playerData";
+import PlayerData from "./playerData/playerData";
 import axios from "axios";
 
 class PlayerAPI extends Component {
@@ -11,8 +11,7 @@ class PlayerAPI extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/players') // Err_Connection_Refused >:(
-      //.then(res => res.json())
+    axios.get('http://localhost:5000/api/players') 
       .then(players => this.setState({
           player: players.data
         }))
@@ -21,9 +20,9 @@ class PlayerAPI extends Component {
     }
     
   render() {
-    console.log(this.state); // {player: Array(0)} while Err Conn Refused
+    console.log(this.state); 
     return (
-      <div className="PlayerAPI">
+      <div className="PlayerAPI"> 
         {this.state.player.map((item, index) => 
           <PlayerData item={item} key={index} />
       )}
