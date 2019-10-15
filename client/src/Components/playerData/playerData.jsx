@@ -6,7 +6,8 @@ const StyledDiv = Styled("div")`
     border-radius: 0 33px 0;
     margin: 1em 2em;
     padding: 1.5em;
-    width: 350px;
+    width: 24%;
+    height: 25%;
     display: inline-block;
 `;
 
