@@ -1,5 +1,6 @@
 import React from 'react';
-import { useDarkMode } from "../Hooks/useDarkMode";
+import { useDarkMode } from "../../Hooks/useDarkMode";
+import "../../App.css";
 import Styled from "styled-components";
 
 const StyledNavBar = Styled("nav")`
@@ -58,7 +59,7 @@ const DarkModeNavBar = () => {
   };
   return (
     <StyledNavBar className='navbar'>
-      <StyledH1>Womens World Cup</StyledH1>
+      <StyledH1>Women's World Cup</StyledH1>
       <StyledDiv className='dark-mode__toggle'>
         <StyledToggle
           onClick={toggleMode}
@@ -66,7 +67,7 @@ const DarkModeNavBar = () => {
         />
       </StyledDiv>
     </StyledNavBar>
-  )
-}
+  );
+};
 
 export default DarkModeNavBar;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PlayerData from "./playerData/playerData";
+import PlayerData from "../playerData/playerData";
 import axios from "axios";
 
 class PlayerAPI extends Component {
